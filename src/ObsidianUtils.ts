@@ -60,11 +60,13 @@ export function getLanguage(extension: string) {
         case "jsx":
         case "cjs":
         case "mjs":
+        case "javascript":
             return "javascript";
         case "ts":
         case "tsx":
         case "cts":
         case "mts":
+        case "typescript":
             return "typescript";
         case "json":
             return "json";
@@ -74,6 +76,9 @@ export function getLanguage(extension: string) {
         case "cpy":
         case "gyp":
         case "gypi":
+        case "python":
+        case "python2":
+        case "python3":
             return "python";
         case "css":
             return "css";
@@ -183,6 +188,7 @@ export function getLanguage(extension: string) {
         case "ig":
             return "m3";
         case "go":
+        case "golang":
             return "go";
         case "s":
             return "mips";
