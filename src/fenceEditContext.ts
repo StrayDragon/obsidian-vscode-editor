@@ -55,7 +55,7 @@ export class FenceEditContext {
 
 		let fenceLines = 0;
 
-		// check in front the current Fence, if there is an uneven number of fences, we are not in a valid fence 
+		// check in front the current Fence, if there is an uneven number of fences, we are not in a valid fence
 		for (let i = 0; i < this.start; i++) {
 			if (this.editor.getLine(i).startsWith("```")) {
 				fenceLines++;
@@ -82,7 +82,7 @@ export class FenceEditContext {
 		}
 
 		const content = editorContent.slice(0, editorContent.length - 1);
-		const langKey = this.editor.getLine(this.start).slice(3).trim();
+		const langKey = this.editor.getLine(this.start).slice(3).split(' ')[0].trim();
 		const language = getLanguage(langKey);
 
 		return { content, language };

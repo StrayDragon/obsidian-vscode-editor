@@ -51,7 +51,7 @@ export function genEditorSettings(setting: EditorSettings, language: string, min
 export function getLanguage(extension: string) {
     const aliasStart = "run-";
     if (extension.startsWith(aliasStart)) {
-        extension = extension.substring(aliasStart.length)
+        extension = extension.slice(aliasStart.length)
     }
 
     switch (extension) {
