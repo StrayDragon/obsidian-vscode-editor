@@ -109,8 +109,15 @@ export class CodeFilesSettingsTab extends PluginSettingTab {
 					await this.plugin.saveSettings();
 				}));
 
-
-
+		new Setting(containerEl)
+			.setName(t('SHOW_NEW_FILE_RIBBON_ICON'))
+			.setDesc(t('SHOW_NEW_FILE_RIBBON_ICON'))
+			.addToggle(toggle => toggle
+				.setValue(this.plugin.settings.showNewFileRibbonIcon)
+				.onChange(async (value) => {
+					this.plugin.settings.showNewFileRibbonIcon = value;
+					await this.plugin.saveSettings();
+				}));
 
 	}
 }

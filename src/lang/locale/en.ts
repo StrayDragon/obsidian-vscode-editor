@@ -24,4 +24,5 @@ export default {
   REGISTE_ERROR: 'VSCode Editor Plugin Error',
   REGISTE_ERROR_DESC: '{0}\nThere may already be other plugins registered with the same file extension. Please change the extension in the settings of the VSCode Editor Plugin or disable conflicting plugins.',
   EDIT_FENCE: 'Edit Code Block in VSCode Editor Plugin',
+  SHOW_NEW_FILE_RIBBON_ICON: 'Show new file ribbon icon',
 };

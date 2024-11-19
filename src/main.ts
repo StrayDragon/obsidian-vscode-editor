@@ -63,9 +63,11 @@ export default class CodeFilesPlugin extends Plugin {
 			})
 		);
 
-		this.addRibbonIcon('file-json', t("CREATE_CODE"), () => {
-			new CreateCodeFileModal(this).open();
-		});
+		if (this.settings.showNewFileRibbonIcon) {
+			this.addRibbonIcon('file-json', t("CREATE_CODE"), () => {
+				new CreateCodeFileModal(this).open();
+			});
+		}
 
 		this.addCommand({
 			id: 'create',

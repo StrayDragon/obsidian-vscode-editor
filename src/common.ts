@@ -9,6 +9,7 @@ export interface EditorSettings {
 	syntaxValidation: boolean;
 	themeColor: string;
 	fontSize: number;
+	showNewFileRibbonIcon: boolean;
 }
 
 export const DEFAULT_SETTINGS: EditorSettings = {
@@ -21,6 +22,7 @@ export const DEFAULT_SETTINGS: EditorSettings = {
 	syntaxValidation: true,
 	themeColor: "AUTO",
 	fontSize: 16,
+	showNewFileRibbonIcon: true,
 }
 
 
