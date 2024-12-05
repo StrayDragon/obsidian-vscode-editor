@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-vscode-editor",
-	"version": "v2024.11.19",
+	"version": "2024.12.5",
 	"description": "Edit Code Files like VSCode.",
 	"main": "src/main.js",
 	"scripts": {
